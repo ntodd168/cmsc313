@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build all .cpp files with g++",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "addmats.cpp",  // Add all your .cpp files here
+                "-o", "addmats.exe",
+                "-g" // Include debugging symbols
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compiles all C++ source files."
+        }
+    ]
+}
